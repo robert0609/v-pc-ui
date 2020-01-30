@@ -54,7 +54,7 @@
     "sass-loader": "^6.0.6",
     "style-loader": "^0.19.1",
     "url-loader": "^0.6.2",
-    "v-tiny-slider": "^0.1.11",
+    "v-tiny-slider": "github:robert0609/v-slider",
     "vue-loader": "^13.0.4",
     "vue-style-loader": "^3.0.1",
     "vue-template-compiler": "^2.4.2",
@@ -71,8 +71,8 @@
   "dependencies": {
     "babel-polyfill": "^6.23.0",
     "bezier-easing": "^2.0.3",
-    "v-image-compressor": "^0.2.7",
-    "v-utility": "^0.6.21",
+    "v-image-compressor": "github:robert0609/v-image-compressor",
+    "v-utility": "github:robert0609/v-utility",
     "vue": "^2.4.2"
   },
   "peerDependencies": {
