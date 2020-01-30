@@ -1,0 +1,51 @@
+@import "../fn";
+.buttom-btn-area {
+  margin-top: 30px;
+  height: 78px;
+  &__inner {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    background: #FFFFFF;
+    box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.16);
+  }
+  &__gap {
+    margin-left: 15px;
+    flex: 1 1 auto;
+  }
+  &__text {
+    font-size: 14px;
+    font-weight: $fontWeightBold;
+    color: $colorTitle;
+    em {
+      color: $colorWarn;
+      font-size: 18px;
+      sub {
+        margin: 0 3px;
+        font-size: 12px;
+        vertical-align: baseline;
+      }
+    }
+    p {
+      margin-top: 2px;
+      font-size: 12px;
+      line-height: 20px;
+      color: $colorDefault;
+      white-space: nowrap;
+      .link {
+        color: $colorPrimary;
+      }
+    }
+  }
+  &__btn {
+    flex: 0 1 auto;
+    width: 158px;
+    .v-btn {
+      white-space: nowrap;
+    }
+  }
+}

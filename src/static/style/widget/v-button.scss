@@ -1,0 +1,50 @@
+@import "../fn";
+// v-button
+.v-btn {
+	box-sizing: border-box;
+	font-size: 17px;
+	font-weight: $fontWeightNormal;
+	line-height: 48px;
+	border-radius: 0;
+	text-align: center;
+	border: 0;
+	&__primary {
+		height: 48px;
+		border: 0;
+		color: #fff;
+		background: $colorPrimary;
+	}
+	&__default {
+		color: $colorPrimary;
+		box-sizing: border-box;
+		height: 48px;
+		line-height: 46px;
+		border: 1px solid $colorPrimary;
+	}
+	&__disabled {
+		background: $colorDisable;
+	}
+	&:not([class*="disabled"]) {
+		@include setActive(button);
+  }
+  &.handling{
+    opacity: $colorOpacityButtonActive;
+  }
+	.v-loading-spinner{
+		margin-top: -2px;
+	}
+}
+.v-btn-area{
+	margin: 40px 15px 15px;
+}
+
+
+// 点击加载更多
+.v-btn-list-more{
+	margin: 20px 30px;
+	text-align: center;
+	font-size: 14px;
+	line-height: 24px;
+	color: $colorDefault;
+	@include setActive(text);
+}

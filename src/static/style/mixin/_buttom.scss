@@ -1,0 +1,37 @@
+@import "../variable/_button";
+// btn
+@mixin btn($direction, $color: $colorBorder, $start: 0, $end: 0){
+
+  font-size: $btn;
+  &:after{
+    content: " ";
+    position: absolute;
+    transform: scaleY(0.5);
+
+    @if $direction == top {
+      top: 0;
+      left: $start;
+      right: $end;
+      border-top: 1px solid $color;
+      transform-origin: 0 0;
+    } @else if $direction == bottom {
+      bottom: 0;
+      left: $start;
+      right: $end;
+      border-bottom: 1px solid $color;
+      transform-origin: 0 100%;
+    } @else if $direction == left {
+      left: 0;
+      top: $start;
+      bottom: $end;
+      border-left: 1px solid $color;
+      transform-origin: 0 0;
+    } @else if $direction == right {
+      right: 0;
+      top: $start;
+      bottom: $end;
+      border-right: 1px solid $color;
+      transform-origin: 100% 0;
+    }
+  }
+}

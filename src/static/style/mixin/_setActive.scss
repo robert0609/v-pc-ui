@@ -1,0 +1,21 @@
+// css3 arrow
+@mixin setActive($type: block) {
+  &:active {
+    @if $type==text {
+      opacity: $colorOpacityActive;
+    }
+		@else if $type==block {
+      background-color: $colorBgActive;
+    }
+		@else if $type==button {
+      opacity: $colorOpacityButtonActive;
+    }
+    @else {
+      // &::after {
+      //   content: "未定义点击效果!!!error";
+      //   font-size: 12px;
+      //   color: red;
+      // }
+    }
+  }
+}

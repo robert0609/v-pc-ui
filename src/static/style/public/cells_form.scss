@@ -1,0 +1,42 @@
+@import "../fn";
+.v-cells__form {
+  .v-cell {
+		padding-top: 20px;
+		padding-bottom: 20px;
+    min-height: 28px;
+    font-size: 17px;
+    &__hd {
+      white-space: nowrap;
+      min-width: 115px;
+		}
+		&__ft {
+      color: $colorDefault;
+		}
+		&__bd{
+			.value{
+				text-align: right;
+				color: $colorDefault;
+				&-inner{
+					display: inline-block;
+					text-align: left;
+					word-break: break-all;
+				}
+			}
+		}
+	}
+	.v-input__input,.v-select{
+		color: $colorDefault;
+	}
+}
+.v-select {
+	&::after {
+		content: "";
+		display: inline-block;
+		width: 5px;
+		height: 5px;
+		border-left: 2px solid #ccc;
+		border-bottom: 2px solid #ccc;
+		transform: rotate(-45deg);
+		margin: 0 0 4px 10px;
+	}
+}

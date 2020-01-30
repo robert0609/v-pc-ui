@@ -1,0 +1,30 @@
+// css3 arrow
+
+@mixin setArrow($direction: right, $color:$colorArrow, $size: 5px) {
+    &::after{
+        content: "";
+        display: inline-block;
+        width: $size;
+        height: $size;
+        border: 1px solid $color;
+        border-color: $color $color transparent transparent;
+
+        @if $direction == top {
+            // margin-left: 8px;
+            // margin-bottom: -3px;
+            transform: translate(7px,3px) rotate(-45deg);
+        } @else if $direction == right {
+            // right: 5px;
+            margin-left: 2px;
+            transform: translate(0,0) rotate(45deg);
+        } @else if $direction == down {
+            right: 10px;
+            // margin-left: 8px;
+            // margin-bottom: 3px;
+            transform: translate(7px,-3px) rotate(135deg);
+        } @else{
+            // margin-left: 8px;
+            transform: translate(7px,0px) rotate(-135deg);
+        }
+    }
+}

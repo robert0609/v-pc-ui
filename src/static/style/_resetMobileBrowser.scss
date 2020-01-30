@@ -1,0 +1,143 @@
+@import "./fn";
+
+// 防止IE、ios在改变方向时字号发生改变
+html {
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  background: $colorBgHtml;
+	min-width:320px;
+	touch-action: manipulation;
+	min-height: 100%;
+	position: relative;
+}
+
+// body
+body {
+  font-family: $mobileFamily;
+	font-size: $sizeDefault;
+	font-weight: $fontWeightNormal;
+	color: $colorTitle;
+	margin: 0;
+	// min-height: 100%;
+}
+
+*{
+    margin: 0;
+    @include setTapColor();
+}
+
+// margin
+ul,p{
+  margin: 0;
+}
+h1,h2,h3,h4,h5,h6{
+  margin-top: 0;
+  margin-bottom: 0;
+  font-weight: normal;
+}
+
+// font-style
+b,strong,em,i{
+  font-style: normal;
+}
+
+// list-tyle
+ol,ul{
+  list-style: none;
+  padding-left: 0;
+}
+
+// border-style
+fieldset,img{
+  border: 0;
+}
+
+// a 链接
+a{
+  outline: none;
+  color: inherit;
+  background: transparent;
+  text-decoration: none;
+}
+
+// hr
+hr{
+  box-sizing: content-box;
+  height: 0;
+  overflow: visible;
+}
+
+// 表单元素继承
+button,input,select,textarea{
+  color: inherit;
+  font: inherit;
+  margin: 0;
+  outline: none;
+}
+input{
+		border: 0;
+		padding: 0;
+    -webkit-appearance: none;
+    border-radius: 0;
+    outline: none;
+		background: transparent;
+}
+
+// 重置ios默认表单样式
+button{
+    padding: 0;
+    border: 0;
+    // width: 100%;
+    // box-sizing: border-box;
+    outline: none;
+}
+select,
+button,
+[type="button"],
+[type="reset"],
+[type="search"],
+[type="submit"],
+::-webkit-search-cancel-button,
+::-webkit-search-results-button {
+  -webkit-appearance: none;
+}
+::-webkit-input-placeholder{
+  // color: inherit;
+  color: $colorDesc;
+}
+::-ms-clear,select::-ms-expand {
+  display: none;
+}
+textarea:focus,input:focus {
+  -webkit-tap-highlight-color: transparent;
+}
+
+// checkbox radio
+[type="checkbox"],[type="radio"]{
+  box-sizing: border-box;
+  padding: 0;
+}
+
+// 去掉各Table cell 的边距并让其边重合
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+// mobile下 th有时不继承 text-align
+th{
+  text-align:inherit;
+}
+
+page{
+    display: block;
+}
+
+img{
+    width: 100%;
+    vertical-align: middle;
+}
+// div 模拟input-placeholder
+.placeholder-input:empty::after{
+    content: attr(placeholder);
+    color:$colorPlaceholder
+}

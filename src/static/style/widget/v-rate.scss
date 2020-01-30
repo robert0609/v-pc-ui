@@ -1,0 +1,26 @@
+@import "../fn";
+// 五分制 小星星
+$vRateSize: 16px;
+.v-rate {
+	line-height: 20px;
+	&__star {
+		display: inline-block;
+		width: $vRateSize * 5;
+		height: 13px;
+		vertical-align: middle;
+		background: url("../image/v-comments_off.png") repeat-x left top; // icon引用路径相对于vui.scss文件
+		background-size: $vRateSize;
+		&_on {
+			display: block;
+			height: 100%;
+			width: 100%;
+			background: url("../image/v-comments_on.png") repeat-x left top;
+			background-size: $vRateSize;
+		}
+	}
+	&__text {
+		margin-left: 3px;
+		font-size: 12px;
+		color: $colorDefault;
+	}
+}

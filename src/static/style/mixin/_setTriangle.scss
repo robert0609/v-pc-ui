@@ -1,0 +1,45 @@
+// css3 arrow
+@mixin setTriangle($direction: bottom, $color:$colorArrow, $size: 5px) {
+  display: inline-block;
+  &::after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 0;
+    border-width: $size;
+    border-#{$direction}-width: 0;
+    border-color: transparent;
+    border-style: solid;
+  }
+  @if $direction == bottom {
+    width: $size*2;
+    height: $size;
+    &::after {
+      border-top-color: $color;
+    }
+  }
+  @else if $direction == top {
+    width: $size*2;
+    height: $size;
+    &::after {
+      border-bottom-color: $color;
+    }
+  } @else if $direction == right {
+    width: $size;
+    height: $size*2;
+    &::after {
+      border-left-color: $color;
+    }
+  } @else if $direction == left {
+    width: $size;
+    height: $size*2;
+    &::after {
+      border-right-color: $color;
+    }
+  } @else{
+    background: red;
+    &::after {
+      content: "X"
+    }
+  }
+}

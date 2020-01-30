@@ -1,0 +1,18 @@
+@import "./fn";
+// reset
+@import "./_resetMobileBrowser";
+// widget
+@import "./widget/v-inputForm";
+@import "./widget/v-button";
+@import "./widget/v-cell";
+@import "./widget/v-loading-spinner";
+@import "./widget/v-rate.scss";
+
+
+// 公用样式
+// 页面标题
+@import "./public/page_title.scss";
+// 通栏大表单
+@import "./public/cells_form.scss";
+// 吸底操作区
+@import "./public/bottom-button-area.scss";

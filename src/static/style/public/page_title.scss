@@ -1,0 +1,38 @@
+@import "../fn";
+.page-title {
+	margin-top: 43px;
+	margin-bottom: 18px;
+	color: $colorTitle;
+	position: relative;
+	padding: 0 15px;
+	// h2 一级大标题
+	h2,h1 {
+		font-size: 28px;
+		line-height: 38px;
+		font-weight: $fontWeightBold;
+	}
+	// h3 副标题
+	// h3 {
+	// 	margin-top: 2px;
+	// 	font-size: 17px;
+	// 	line-height: 27px;
+	// 	font-weight: $fontWeightNormal;
+	// }
+	p {
+		margin-top: 5px;
+		font-size: 14px;
+		line-height: 20px;
+		color: $colorDefault;
+		font-weight: $fontWeightNormal;
+	}
+	.btn-top{
+		position: absolute;
+		right: 5px;
+		top: -32px;
+		font-size: 17px;
+		color: $colorTitle;
+		font-weight: 400;
+		line-height: 27px;
+		padding: 0 10px;
+	}
+}

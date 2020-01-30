@@ -1,0 +1,19 @@
+@import "../fn";
+// 登录注册表单页
+.v-input-form {
+  &__cell {
+		@include setOnePx(bottom,15px,15px);
+    display: flex;
+    align-items: center;
+    padding: 0 15px;
+    font-size: 17px;
+    line-height: 24px;
+		height: 68px;
+	}
+}
+// 输入密码是否可见
+.v-input__visable{
+	font-size: 17px;
+	font-weight: $fontWeightNormal;
+	color: $colorPrimary;
+}

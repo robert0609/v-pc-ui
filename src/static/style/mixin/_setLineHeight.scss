@@ -1,0 +1,8 @@
+// @import "../fn";
+
+// fontSize + lineHeight
+
+@mixin setLineHeight($fontSize, $spacing) {
+    font-size: $fontSize;
+    line-height: $fontSize + 2*$spacing;
+}

@@ -1,0 +1,36 @@
+@import "../fn";
+// v-cell
+.v-cell {
+  display: flex;
+  align-items: center;
+  &__bd {
+		display: block;
+    flex: 1 1 auto;
+    width: 0;
+  }
+  &__ft {
+    margin-left: 10px;
+  }
+  &.access {
+		&::after {
+			content: "";
+			display: inline-block;
+			width: 5px;
+			height: 5px;
+			border-left: 2px solid $colorArrow;
+			border-bottom: 2px solid $colorArrow;
+			transform: rotate(-135deg);
+			margin: 0 0 2px 7px;
+			flex: 0 0 auto;
+		}
+  }
+}
+
+.v-cells>.v-cell {
+  @include setOnePx(bottom, 15px, 15px);
+  padding: 0 15px;
+}
+
+.v-cell.access {
+  @include setActive;
+}

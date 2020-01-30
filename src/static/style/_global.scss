@@ -1,0 +1,55 @@
+﻿// font family
+// $mobileFamily:  "Helvetica Neue",Helvetica,"Hiragino Sans GB","Microsoft YaHei",Arial,sans-serif;
+$mobileFamily: "Helvetica Neue",Helvetica,"PingFang SC","Hiragino Sans GB","Microsoft YaHei","微软雅黑",Arial,sans-serif;
+
+// width
+$containerWidth: 1180px;
+
+// font weight
+$fontWeightNormal: 400;
+$fontWeightBold: 500;
+
+// font color
+$colorDefault: #666;
+$colorTitle: #333;
+$colorDesc: #999;
+$colorDisable: #CCC;
+$colorPlaceholder: $colorDesc;
+$colorPrimary: #B0A174;
+$colorActive: #D8C790;
+$colorWarn: #FF6C6D;
+$colorSucess: #44D39F;
+$colorLink: $colorPrimary;
+$colorLinkHover: $colorPrimary;
+$colorWhite: #FFF;
+
+// background color
+$colorBgHtml: #FFF;
+$colorArea: #EEE;
+$colorPrimaryG: #67BABB;
+$colorAreaBlack: #292929;
+$colorAreaGray: #F7F7F7;
+$colorAreaPrimary: rgba(216, 199, 144 ,.3);
+
+// border color
+$colorBorder: #E5E5E5;
+
+// arrow color
+$colorArrow: #CCC;
+
+// active color
+$colorBgActive: #EEE;
+
+// active opatity
+$colorOpacityActive: .6;
+$colorOpacityButtonActive: .8;
+
+// shadow
+$boxShadow: 1px 1px 4px 0 rgba(0,0,0,0.10);
+$boxDialogShadow: 0 1px 6px 0 rgba(0,0,0,0.25);
+
+// font size
+$sizeDefault: 14px;
+$sizeTitle: 16px;
+$sizeDesc: 12px;
+$sizeSmall: 11px;
